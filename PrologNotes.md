@@ -198,4 +198,29 @@ near_water(bob).
 ```
 ```prolog
 ?- does_alice_dance.
+
+yes
+When Alice is happy and with Albert she dances
+```
+---
+### Printing
+Using `write('...')`:
+```prolog
+write('The Quick Brown Fox Jumps Over The Lazy Dog.')
+```
+Prints:
+```prolog
+The Quick Brown Fox Jumps Over The Lazy Dog.
+``` 
+Using `format('...',[... , ...])`:
+```prolog
+printSomething(X,Y,Z) :- format('~w is a ~w ~w', [X, Y, Z]).
+```
+Query:
+```prolog
+?- printSomething(prolog, fun, language).
+```
+Prints:
+```
+prolog is a fun language
 ```
