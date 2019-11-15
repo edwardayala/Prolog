@@ -22,7 +22,7 @@
 ---
 ### Anatomy of a Fact
 ```prolog
-	loves(romeo, juliet).
+loves(romeo, juliet).
 ```
 * loves(romeo, juliet). - Fact
 * `loves` - Predicate
