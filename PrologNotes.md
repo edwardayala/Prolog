@@ -1,3 +1,6 @@
+
+<div style="text-align:center"><img src="https://starbeamrainbowlabs.com/images/logos/swi-prolog.svg"/></div>
+
 # Prolog Notes:
 ### Basic Notes
 * Collection of Facts and Rules we can Query
