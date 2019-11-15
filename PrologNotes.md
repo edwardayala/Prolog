@@ -54,12 +54,12 @@ loves(juliet, romeo) :- loves(romeo, juliet).
 * Query database for an answer
 * ex:
 ```prolog
-	?- loves(romeo, X).
+?- loves(romeo, X).
 ```
 * Asking database 'Who loves romeo?'
 * returns:
 ```prolog
-	X = juliet
+X = juliet
 ```
 ---
 ### Deep into Facts
@@ -70,46 +70,82 @@ loves(juliet, romeo) :- loves(romeo, juliet).
 #### Fact Checking:
 * Insert facts into database
 ```prolog
-	male(bob).
-	male(jim).
+male(bob).
+male(jim).
 	
-	female(sam).
-	female(may).
+female(sam).
+female(may).
 ```
 * Query the database(fact check)
 ```prolog
-	?- female(may).
+?- female(may).
 ```
 * Returns: `yes` (true)
 
 #### Listing Facts:
 * Query the database
 ```prolog
-	?- listing(male).
+?- listing(male).
 ```
 * Returns:
 ```prolog
-	male(jim).
-	male(bob).
+male(jim).
+male(bob).
 ```
 #### Cycle through pairs:
 * Query the database
 ```prolog
-	?- male(X), female(Y).
+?- male(X), female(Y).
 ```
 * This query will show all combinations of male and female
 ```prolog
-	X = jim
-	Y = sam ? ;
+X = jim
+Y = sam ? ;
 
-	X = jim
-	Y = may ? ;
+X = jim
+Y = may ? ;
 
-	X = bob
-	Y = sam ? ;
+X = bob
+Y = sam ? ;
 
-	X = bob
-	Y = may
+X = bob
+Y = may
 	
-	yes
+yes
+```
+
+### Deep into Rules:
+* Use rules when a fact depends on group of other facts
+```prolog
+% Fact 1:
+loves(romeo, juliet).
+% Rule 1:
+loves(juliet, romeo) :- loves(romeo, juliet).
+
+% More Facts:
+happy(albert).
+happy(alice).
+happy(bob).
+happy(bill).
+with_albert(alice).
+
+% Rule:
+runs(albert) :-
+	happy(albert).
+```
+* Rundown:
+	* Fact 1: Romeo loves Juliet
+	* Rule 1: Juliet loves Romeo **IF** Romeo loves Juliet
+	* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+	* More Facts:
+		* Albert is Happy
+		* Alice is Happy
+		* Bob is Happy
+		* Bill is Happy
+		* Alice is With_Robert
+	* Rule: Albert runs **IF** Albert is Happy
+```prolog
+?- runs(albert).
+
+yes
 ```
