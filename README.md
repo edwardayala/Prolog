@@ -7,6 +7,7 @@
 * Fact/Rules a.k.a. Clause
 * Predicates - used to keep commands brief
 ---
+
 ### Hello World
 ```prolog
 	?- write('Hello World'), nl,
@@ -19,6 +20,7 @@
 * Use `nl` for new line
 * `write` = print
 * `.` for ending a line
+
 ---
 ### Anatomy of a Fact
 ```prolog
@@ -29,6 +31,7 @@ loves(romeo, juliet).
 * `romeo` & `juliet` - Atoms
 * in other words - `x(y,z) -> 'y x z'`
 * in other words- `loves(romeo, juliet) -> 'romeo loves juliet'`
+
 ---
 ### Anatomy of a Rule
 ```prolog
@@ -44,14 +47,17 @@ loves(juliet, romeo) :- loves(romeo, juliet).
 * in other words - `x :- y` -> `x is true IF y is true`
 * in other words -` loves(juliet, romeo) :- loves(romeo, juliet)` -> `juliet loves romeo IF romeo loves juliet`
 * output: `yes` (true)
+
 ---
 ### Anatomy of a Variable
 * Object we can't name at the time of execution
 * Variable starts with uppercase letter
 * Used for querying the database
+
 ---
 ### Anatomy of an Atom
 * Atoms start with lowercase letter
+
 ---
 ### Query Terminal
 * Query database for an answer
@@ -64,6 +70,7 @@ loves(juliet, romeo) :- loves(romeo, juliet).
 ```prolog
 X = juliet
 ```
+
 ---
 ### Deep into Facts
 * Write relationship first, followed by paranthesis, followed by dot
@@ -202,6 +209,7 @@ near_water(bob).
 yes
 When Alice is happy and with Albert she dances
 ```
+
 ---
 ### Printing
 Using `write('...')`:
