@@ -32,7 +32,7 @@
 
 * Syntax for defining a Rule
 * Similar to 'if'
- 
+
 	loves(juliet, romeo) :- loves(romeo, juliet).
 
 * in other words - x :- y -> 'x is true IF y is true
@@ -42,14 +42,18 @@
 ### Anatomy of a Variable
 * Object we can't name at the time of execution
 * Variable starts with uppercase letter
+* Used for querying the database
 
 ### Anatomy of an Atom
+* Atoms start with lowercase letter
 
+### Query Terminal
+* Query database for an answer
+* ex:
 
+	loves(romeo, X).
 
+* Asking database 'Who loves romeo?'
+* returns:
 
-
-
-
-
-
+	X = juliet
