@@ -1,5 +1,3 @@
-# Prolog
- Collection of Prolog notes and programs
 # Prolog Notes:
 ### Basic Notes
 * Collection of Facts and Rules we can Query
