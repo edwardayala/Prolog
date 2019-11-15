@@ -6,6 +6,7 @@
 * `[filename].` compile prolog program
 * Fact/Rules a.k.a. Clause
 * Predicates - used to keep commands brief
+
 ---
 
 ### Hello World
