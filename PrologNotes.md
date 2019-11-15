@@ -65,14 +65,14 @@ loves(juliet, romeo) :- loves(romeo, juliet).
 ### Deep into Facts
 * Write relationship first, followed by paranthesis, followed by dot
 * Always start with lowercase letters
-* Can contain lowercase/uppercase letters, numbers, symbols(+, - , _, *, /)
+* Can contain lowercase/uppercase letters, numbers, symbols(+, - , _ , * , /)
 * Never start an Atom with underscore
 #### Fact Checking:
 * Insert facts into database
 ```prolog
 	male(bob).
 	male(jim).
-	
+
 	female(sam).
 	female(may).
 ```
@@ -110,6 +110,6 @@ loves(juliet, romeo) :- loves(romeo, juliet).
 
 	X = bob
 	Y = may
-	
+
 	yes
 ```
