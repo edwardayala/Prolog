@@ -1,11 +1,11 @@
 # Prolog Notes:
+### Basic Notes
 * Collection of Facts and Rules we can Query
 * Facts/Rules stored in Database/Knowledge Base
-
 * `halt.` - to exit prolog
 * `[filename].` compile prolog program
-
 * Fact/Rules a.k.a. Clause
+* Predicates - used to keep commands brief
 ---
 ### Hello World
 ```prolog
@@ -116,6 +116,7 @@ Y = may
 	
 yes
 ```
+##### side-note:  when `?` appears, it means there are more pairs to show, enter `;` to show the next pair until there are none left to show *(prevalent in OSX Prolog)*
 
 ### Deep into Rules:
 * Use rules when a fact depends on group of other facts
@@ -169,4 +170,15 @@ Rundown:
 yes
 ```
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+```prolog
+% New New Rule(Predicate):
+does_alice_dance :- dances(alice),
+	write('When Alice dances if she is Happy and with Albert she dances').
 
+% New Broken Rule:
+swims(bob) :-
+	 happy(bob),
+	 near_water(bob).
+```
+Rundown:
+* New New Rule(Predicate):
