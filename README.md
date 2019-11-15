@@ -110,6 +110,7 @@ male(bob).
 ?- male(X), female(Y).
 ```
 * This query will show all combinations of male and female
+
 ```prolog
 X = jim
 Y = sam ? ;
@@ -125,6 +126,7 @@ Y = may
 	
 yes
 ```
+
 ##### side-note:  when `?` appears, it means there are more pairs to show, enter `;` to show the next pair until there are none left to show *(prevalent in OSX Prolog)*
 
 ### Deep into Rules:
