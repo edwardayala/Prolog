@@ -104,6 +104,7 @@ female(may).
 male(jim).
 male(bob).
 ```
+
 #### Cycle through pairs:
 * Query the database
 ```prolog
@@ -132,8 +133,11 @@ yes
 ### Deep into Rules:
 * Use rules when a fact depends on group of other facts
 * Reminder: 
+
 `:-` = **IF** 
 `,` = **AND**
+
+
 ```prolog
 % Fact 1:
 loves(romeo, juliet).
