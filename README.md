@@ -155,6 +155,8 @@ with_albert(alice).
 runs(albert) :-
 	happy(albert).
 ```
+
+
  Rundown:
 * Fact 1: Romeo *loves* Juliet
 * Rule 1: Juliet *loves* Romeo **IF** Romeo *loves* Juliet 
@@ -165,12 +167,16 @@ runs(albert) :-
 	* Bill is *Happy*
 	* Alice is *With_Robert*
 * Rule: Albert *runs* **IF** Albert is *Happy*
+
+
 ```prolog
 ?- runs(albert).
 
 yes
 ```
+
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
 ```prolog
 % New Rule:
 dances(alice) :-
@@ -179,12 +185,17 @@ dances(alice) :-
 ```
 Rundown:
 * New Rule: Alice *dances* **IF** Alice is *With_Albert*
+
+
 ```prolog
 ?- dances(alice)
 
 yes
 ```
+
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+
 ```prolog
 % New New Rule(Predicate):
 does_alice_dance :- dances(alice),
@@ -195,6 +206,8 @@ swims(bob) :-
 	 happy(bob),
 	 near_water(bob).
 ```
+
+
 Rundown:
 * New New Rule(Predicate): `does_alice_dance`
 	* Checks **IF** `dances(alice)` is true
@@ -208,9 +221,13 @@ Rundown:
 		* Bob is *near water*
 	* This rule is broken because `near_water()` *Fact* is not defined
 	* This can be fixed by defining `near_water()` Fact:
+	
+	
 ```prolog
 near_water(bob).
 ```
+
+
 ```prolog
 ?- does_alice_dance.
 
