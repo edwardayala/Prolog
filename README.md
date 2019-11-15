@@ -1,4 +1,4 @@
-<div style="text-align:center"><img src="https://starbeamrainbowlabs.com/images/logos/swi-prolog.svg"/></div>
+<div style="text-align:center"><img src="https://camo.githubusercontent.com/60bbbdf4fe36938bee8b1ead8268a206bc504ee9/687474703a2f2f7777772e7377692d70726f6c6f672e6f72672f69636f6e732f737769706c2e706e67"/></div>
 
 # Prolog Notes:
 ### Basic Notes
