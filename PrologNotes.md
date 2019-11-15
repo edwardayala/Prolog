@@ -173,7 +173,7 @@ yes
 ```prolog
 % New New Rule(Predicate):
 does_alice_dance :- dances(alice),
-	write('When Alice dances if she is Happy and with Albert she dances').
+	write('When Alice is happy and with Albert she dances').
 
 % New Broken Rule:
 swims(bob) :-
@@ -181,4 +181,21 @@ swims(bob) :-
 	 near_water(bob).
 ```
 Rundown:
-* New New Rule(Predicate):
+* New New Rule(Predicate): `does_alice_dance`
+	* Checks **IF** `dances(alice)` is true
+		* Alice is *dancing*
+	* If true, print: `When Alice is happy and with Albert she dances`
+* New Broken Rule: `swims(bob)`
+	* Checks **IF** `happy(bob)` is true
+		* Bob is *happy*
+	* **AND** 
+	* Checks **IF** `near_water(bob)`
+		* Bob is *near water*
+	* This rule is broken because `near_water()` *Fact* is not defined
+	* This can be fixed by defining `near_water()` Fact:
+```prolog
+near_water(bob).
+```
+```prolog
+?- does_alice_dance.
+```
