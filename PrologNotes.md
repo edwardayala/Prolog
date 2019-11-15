@@ -29,11 +29,10 @@
 
 ### Anatomy of a Rule
 	:-
+	loves(juliet, romeo) :- loves(romeo, juliet).
 
 * Syntax for defining a Rule
 * Similar to 'if'
-
-	loves(juliet, romeo) :- loves(romeo, juliet).
 
 * in other words - x :- y -> 'x is true IF y is true
 * in other words - loves(juliet, romeo) :- loves(romeo, juliet) -> juliet loves romeo IF romeo loves juliet
