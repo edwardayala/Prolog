@@ -35,7 +35,9 @@
 :-
 ```
 * Syntax for defining a Rule
-* Similar to 'if'
+* Similar to conditional statement
+	* `:-` = **IF**
+	* `,` = **AND**
 ```prolog
 loves(juliet, romeo) :- loves(romeo, juliet).
 ```
@@ -117,6 +119,9 @@ yes
 
 ### Deep into Rules:
 * Use rules when a fact depends on group of other facts
+* Reminder: 
+`:-` = **IF** 
+`,` = **AND**
 ```prolog
 % Fact 1:
 loves(romeo, juliet).
@@ -134,19 +139,34 @@ with_albert(alice).
 runs(albert) :-
 	happy(albert).
 ```
-* Rundown:
-	* Fact 1: Romeo loves Juliet
-	* Rule 1: Juliet loves Romeo **IF** Romeo loves Juliet
-	* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-	* More Facts:
-		* Albert is Happy
-		* Alice is Happy
-		* Bob is Happy
-		* Bill is Happy
-		* Alice is With_Robert
-	* Rule: Albert runs **IF** Albert is Happy
+ Rundown:
+* Fact 1: Romeo *loves* Juliet
+* Rule 1: Juliet *loves* Romeo **IF** Romeo *loves* Juliet 
+* More Facts:
+	* Albert is *Happy*
+	* Alice is *Happy*
+	* Bob is *Happy*
+	* Bill is *Happy*
+	* Alice is *With_Robert*
+* Rule: Albert *runs* **IF** Albert is *Happy*
 ```prolog
 ?- runs(albert).
 
 yes
 ```
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+```prolog
+% New Rule:
+dances(alice) :-
+	happy(alice),
+	with_albert(alice).
+```
+Rundown:
+* New Rule: Alice *dances* **IF** Alice is *With_Albert*
+```prolog
+?- dances(alice)
+
+yes
+```
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
