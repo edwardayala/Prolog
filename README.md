@@ -78,6 +78,7 @@ X = juliet
 * Always start with lowercase letters
 * Can contain lowercase/uppercase letters, numbers, symbols(+, - , _ , * , / )
 * Never start an Atom with underscore
+
 #### Fact Checking:
 * Insert facts into database
 ```prolog
