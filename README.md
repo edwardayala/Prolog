@@ -1,3 +1,5 @@
+<div style="text-align:center"><img src="https://starbeamrainbowlabs.com/images/logos/swi-prolog.svg"/></div>
+
 # Prolog Notes:
 ### Basic Notes
 * Collection of Facts and Rules we can Query
@@ -135,6 +137,7 @@ yes
 * Reminder: 
 
 `:-` = **IF** 
+
 `,` = **AND**
 
 
@@ -167,7 +170,6 @@ runs(albert) :-
 	* Bill is *Happy*
 	* Alice is *With_Robert*
 * Rule: Albert *runs* **IF** Albert is *Happy*
-
 
 ```prolog
 ?- runs(albert).
