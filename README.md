@@ -13,8 +13,8 @@
 
 ### Hello World
 ```prolog
-	?- write('Hello World'), nl,
-	write('Let\'s Program').
+?- write('Hello World'), nl,
+write('Let\'s Program').
 ```
 >Hello World
 
@@ -44,9 +44,11 @@ loves(romeo, juliet).
 * Similar to conditional statement
 	* `:-` = **IF**
 	* `,` = **AND**
+
 ```prolog
 loves(juliet, romeo) :- loves(romeo, juliet).
 ```
+
 * in other words - `x :- y` -> `x is true IF y is true`
 * in other words -` loves(juliet, romeo) :- loves(romeo, juliet)` -> `juliet loves romeo IF romeo loves juliet`
 * output: `yes` (true)
