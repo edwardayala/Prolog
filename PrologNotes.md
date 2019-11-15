@@ -25,7 +25,7 @@
 * loves - Predicate
 * romeo & juliet - Atoms
 * in other words - x(y,z) -> 'y x z'
-*     	  		 - loves(romeo, juliet) -> 'romeo loves juliet'
+* in other words- loves(romeo, juliet) -> 'romeo loves juliet'
 
 ### Anatomy of a Rule
 	:-
@@ -36,7 +36,7 @@
 	loves(juliet, romeo) :- loves(romeo, juliet).
 
 * in other words - x :- y -> 'x is true IF y is true
-	   		 	 - loves(juliet, romeo) :- loves(romeo, juliet) -> juliet loves romeo IF romeo loves juliet
+* in other words - loves(juliet, romeo) :- loves(romeo, juliet) -> juliet loves romeo IF romeo loves juliet
 * output: yes (true)
 
 ### Anatomy of a Variable
