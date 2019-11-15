@@ -39,9 +39,11 @@
 	   		 	 - loves(juliet, romeo) :- loves(romeo, juliet) -> juliet loves romeo IF romeo loves juliet
 * output: yes (true)
 
-### Anatomy of Variable
+### Anatomy of a Variable
 * Object we can't name at the time of execution
 * Variable starts with uppercase letter
+
+### Anatomy of an Atom
 
 
 
