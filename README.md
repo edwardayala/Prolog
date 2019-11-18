@@ -85,6 +85,8 @@ X = juliet
 
 #### Fact Checking:
 * Insert facts into database
+
+
 ```prolog
 male(bob).
 male(jim).
@@ -92,10 +94,16 @@ male(jim).
 female(sam).
 female(may).
 ```
+
+
 * Query the database(fact check)
+
+
 ```prolog
 ?- female(may).
 ```
+
+
 * Returns: `yes` (true)
 
 #### Listing Facts:
