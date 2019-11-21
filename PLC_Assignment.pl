@@ -1,4 +1,5 @@
 % PLC -  Prolog Assignment | Edward Ayala | Braxton Brown | Suvaik Patel
+% Found on https://swish.swi-prolog.org/ || https://swish.swi-prolog.org/p/PLC%20Prolog%20Assignment.pl
 
 % -------------- FACTS --------------
 
